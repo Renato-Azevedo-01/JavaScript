@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-01</title>
+    <link rel="shortcut icon" href="./img/jsicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Projeto 01 - JavaScript</h1>
+    <div class="container">
+        <div class="proj01"></div>
+        <img class ='img1' src="./img/re1.png" alt="fig01" srcset=""/>
+    </div>
+    <div>
+        <button onClick="clicou()">Clique Aqui</button>
+    </div>
+    <div class="clicou_msg"></div>
+    <div>
+        <button onClick="clicou2()">Clique neste</button>
+    </div>
+    <div>
+        <button onClick="b1()">Botão 1</button>
+        <button onClick="b2()">Botão 2</button>
+        <button onClick="b3()">Botão 3</button>
+
+    </div>
+    <script>
+        document.querySelector('.proj01').innerText="Meu Primeiro Projeto !";  
+        function clicou() { 
+            document.querySelector('.clicou_msg').innerHTML="Clicou o botão ! Teste do => onClick ";
+        }                   
+        function clicou2() {        
+            let nome = prompt('Digite seu nome')
+            let idade = prompt('Qual é a sua idade ?')
+            idade = idade * 1
+            window.alert(`Olá, ${nome} ! Você está muito bem !!! Nem parece ter ${idade} anos`)
+            window.alert(`Antes de $(idade) temos $(idade -1) e depois $(idade +1)`)
+        }  
+        
+        function b1() { 
+            window.alert('Clicou no botão 1');
+        }
+        function b2() { 
+            window.alert('Clicou no botão 2');
+        }
+        function b3() { 
+            window.alert('Clicou no botão 3');
+        }  
+    </script>    
+</body>
+</html>
